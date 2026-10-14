@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Birthday Surprise 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 🌸 Premium Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-flower">🌸</div>
+
+            <h2>Preparing a little</h2>
+            <h1>Birthday Magic ✨</h1>
+
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+
+            <p>Something lovely is waiting for you 💗</p>
+        </div>
+    </div>
+
+    <!-- Floating Background Decorations -->
+    <div class="background-decor" id="backgroundDecor"></div>
+
+    <!-- Welcome Screen -->
+    <section class="welcome-screen" id="welcomeScreen">
+
+        <div class="welcome-card">
+
+            <div class="flower-icon">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f338.svg" alt=""
+                    aria-hidden="true">
+            </div>
+
+            <p class="small-heading">A LITTLE SOMETHING FOR YOU</p>
+
+            <h1>
+                Hey, You! <br>
+                <span>Someone has a surprise...🎀</span>
+            </h1>
+
+            <p class="welcome-text">
+                A little surprise to make your special day
+                even more beautiful. 💗
+            </p>
+
+            <button class="surprise-btn" id="openSurprise">
+                Open Your Surprise
+                <span>✨</span>
+            </button>
+
+            <p class="bottom-note">Made with care & love ♡</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Play background music" aria-pressed="false">
+        🎵 Play Music
+    </button>
+
+    <audio id="birthdayMusic" loop preload="none">
+        <source src="music/kalyani.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+    <!-- Birthday Screen -->
+    <main class="birthday-screen hidden" id="birthdayScreen">
+
+        <div class="birthday-content">
+
+            <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+
+            <h2 class="birthday-title">
+                Happy Birthday
+                <span>Beautiful Soul! </span>
+            </h2>
+
+            <div class="birthday-cake">
+                <img src="https://png.pngtree.com/png-vector/20241019/ourmid/pngtree-happy-birthday-cake-with-purple-balloons-candles-png-image_14114657.png"
+                    alt="Birthday Cake">
+            </div>
+
+            <p class="birthday-subtitle">
+                May your day be filled with happiness,
+                laughter and beautiful memories.
+            </p>
+
+            <button class="wish-btn" id="wishButton">
+                Make a Wish ✨
+            </button>
+
+            <div class="wish-message hidden" id="wishMessage">
+                May all your beautiful dreams come true! 💗
+            </div>
+
+            <button class="message-btn" id="messageButton">
+                One Little Birthday Message 💌
+            </button>
+
+            <!-- Personal Birthday Card -->
+
+            <!-- Birthday Envelope -->
+            <section class="envelope-section hidden" id="envelopeSection">
+
+                <p class="envelope-heading">
+                    A LITTLE SURPRISE FOR YOU 🌸
+                </p>
+
+                <p class="envelope-instruction" id="envelopeInstruction">
+                    Tap the envelope to open your little surprise 💌
+                </p>
+
+                <button class="envelope" id="envelope" type="button" aria-label="Open your birthday letter"
+                    aria-expanded="false">
+
+                    <span class="envelope-back"></span>
+
+                    <span class="envelope-letter" id="envelopeLetter">
+                        <span class="letter-flower"> <img
+                                src="https://cdn-icons-png.flaticon.com/128/12121/12121314.png" width="50px"
+                                height="50px" alt=""> </span>
+
+                        <span class="letter-title">
+                            A Little Birthday Wish
+                        </span>
+
+                        <span class="letter-preview">
+                            Made especially for you ♡
+                        </span>
+                    </span>
+
+                    <span class="envelope-pocket"></span>
+
+                    <span class="envelope-flap"></span>
+
+                    <span class="envelope-seal">♥</span>
+
+                </button>
+
+                <p class="envelope-footer">
+                    A little happiness, wrapped with care ✨
+                </p>
+
+            </section>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
